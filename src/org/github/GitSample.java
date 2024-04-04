@@ -1,5 +1,8 @@
 package org.github;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GitSample {
 	
 public static void main()   {
@@ -9,18 +12,20 @@ public static void main()   {
 		System.out.println("Local git repository");
 		System.out.println("Remote git repository");
 		
-		String s="Java Programme";
+		List<String> li=new ArrayList<String>();
 		
-		String op="";
+		li.add("A");
+		li.add("B");
+		li.add("C");
+		li.add("D");
+		li.add("E");
 		
-		for(int i=s.length()-1;i>=0;i--)  {
+		for(int i=0;i<li.size();i++)  {
 			
-			char c = s.charAt(i);
-			op=op+c;
+			System.out.println(li.get(i));
 			
 		}
 	
-		System.out.println(op);
 	
 	}
 
